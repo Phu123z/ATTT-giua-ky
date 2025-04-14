@@ -1,7 +1,7 @@
 
 
-from des.file_io import read_file, write_file
-from des.encrypt import des_encrypt_block
+from des_file_io import read_file, write_file
+from des_encrypt import des_encrypt_block
 
 
 def str_to_bin(s):
