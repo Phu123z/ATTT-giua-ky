@@ -1,5 +1,5 @@
-from des.file_io import read_file, write_file
-from des.decrypt import des_decrypt_block
+from des_file_io import read_file, write_file
+from des_decrypt import des_decrypt_block
 
 
 def bin_to_str(b):
