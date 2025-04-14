@@ -1,4 +1,4 @@
-from aes.constants import S_BOX, INV_S_BOX
+from aes_constants import S_BOX, INV_S_BOX
 
 def sub_bytes(state):
     return [[S_BOX[byte] for byte in row] for row in state]
