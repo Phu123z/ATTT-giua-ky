@@ -1,6 +1,6 @@
-from des.core import feistel, generate_subkeys
-from des.utils import permute, xor, split_in_half
-from des.constants import IP, FP
+from des_core import feistel, generate_subkeys
+from des_utils import permute, xor, split_in_half
+from des_constants import IP, FP
 
 
 def des_encrypt_block(block_64, key_64):
