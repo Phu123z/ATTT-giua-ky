@@ -1,5 +1,5 @@
-from aes.core import sub_bytes, shift_rows, mix_columns, add_round_key
-from aes.constants import R_CON, S_BOX
+from aes_core import sub_bytes, shift_rows, mix_columns, add_round_key
+from aes_constants import R_CON, S_BOX
 
 def key_expansion(key):
     # Simplified for 128-bit key
