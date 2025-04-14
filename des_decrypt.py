@@ -1,1 +1,21 @@
+# des/decrypt.py
+
+from des.core import feistel, generate_subkeys
+from des.utils import permute, xor, split_in_half
+from des.constants import IP, FP
+
+
+def des_decrypt_block(block_64, key_64):
+    subkeys = generate_subkeys(key_64)
+    subkeys.reverse()
+    block = permute(block_64, IP)
+    left, right = split_in_half(block)
+
+    for subkey in subkeys:
+        temp = right
+        right = xor(left, feistel(right, subkey))
+        left = temp
+
+    final_block = permute(right + left, FP)
+    return final_block
 
