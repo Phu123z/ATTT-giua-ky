@@ -77,4 +77,4 @@ LEFT_SHIFTS = [
 ]
 
 # S-Boxes (S1 to S8)
-from .sboxes import S_BOXES
+from des_sboxes import S_BOXES
