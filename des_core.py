@@ -1,6 +1,6 @@
-from des.constants import IP, FP, E, P, PC1, PC2, SHIFTS
-from des.sboxes import S_BOXES
-from des.utils import permute, xor, left_shift, split_in_half
+from des_constants import IP, FP, E, P, PC1, PC2, SHIFTS
+from des_sboxes import S_BOXES
+from des_utils import permute, xor, left_shift, split_in_half
 
 
 def sbox_substitution(bits48):
