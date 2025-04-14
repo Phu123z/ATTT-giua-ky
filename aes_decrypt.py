@@ -1,5 +1,5 @@
-from aes.core import inv_sub_bytes, inv_shift_rows, inv_mix_columns, add_round_key
-from aes.encrypt import key_expansion, bytes_to_matrix, matrix_to_bytes
+from aes_core import inv_sub_bytes, inv_shift_rows, inv_mix_columns, add_round_key
+from aes_encrypt import key_expansion, bytes_to_matrix, matrix_to_bytes
 
 def decrypt_block(ciphertext, key):
     state = bytes_to_matrix(ciphertext)
